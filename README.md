@@ -1,7 +1,7 @@
 # 🎥 JM Flix | React Movie Database
 
-JM Flix is a dynamic movie database application built using React and API integration from The Movie Database (TMDB).<br/>
-It provides a user-friendly interface similar to popular platforms like IMDB and Letterboxd.<br/> 
+JM Flix is a dynamic movie database application built using React and API integration from The Movie Database (TMDB).<br>
+It provides a user-friendly interface similar to popular platforms like IMDB and Letterboxd.<br>
 The project was developed between December 2020 and January 2021.
 
 ## Features
