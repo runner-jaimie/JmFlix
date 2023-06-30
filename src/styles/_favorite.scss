@@ -1,0 +1,23 @@
+// Favorite
+
+.fav-title {
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  color: #3498db;
+}
+
+.fav-no-text {
+  text-align: center;
+  margin: 200px 0;
+  color: #767676;
+}
+@media (min-width: 720px) {
+ .fav-title {
+  margin-top: 80px;
+  font-size: 40px;
+ }
+ .fav-no-text {
+   font-size: 20px;
+ }
+}

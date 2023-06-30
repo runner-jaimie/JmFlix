@@ -1,0 +1,25 @@
+// footer
+
+footer {
+ color: rgb(118, 118, 118);
+ font-size: 16px;
+ padding-bottom: 30px;
+ display: flex;
+ justify-content: center;
+}
+
+.footer-logo {
+ width: 60px;
+ height: 60px;
+ margin: 20px 0 5px 20px;
+}
+
+.footer-text {
+ margin: 20px;
+}
+
+@media (min-width: 720px) {
+  .footer-logo {
+    margin: 0 0 0 20px;
+  }
+}

@@ -1,0 +1,135 @@
+// Home
+
+.movies-container {
+ display: grid;
+ grid-template-columns: repeat(1, 1fr);
+ grid-template-rows: 1fr;
+ grid-gap: 2em;
+ padding: 6vw;
+}
+
+.card {
+ position: relative;
+}
+
+.card:hover .movie-info,
+.card:active .movie-info {
+ transition: 0.2s ease-in;
+ opacity: 1;
+}
+
+.movie-info {
+ opacity: 0;
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background-color: black;
+ padding: 80px 20px;
+ transition: 0.2s ease-in;
+}
+
+.movie-info a:hover .card .movie-info,
+.movie-info a:active .card .movie-info {
+ opacity: 1;
+}
+
+.rating {
+ position: absolute;
+ width: 48px;
+ height: 38px;
+ top: 27px;
+ right: 20px;
+ pointer-events: none;
+ border-radius: 20%;
+ border: 1px solid hsla(0, 0%, 63.1%, 0.379);
+ background: transparent;
+ text-align: center;
+ line-height: 38px;
+ font-size: 16px;
+}
+
+.img-box {
+ width: 100%;
+ height: 100%;
+}
+
+.movie-info h2 {
+ color: #a1a1a1;
+ margin-top: 20px;
+ margin-bottom: 10px;
+ display: -webkit-box;
+ text-overflow: ellipsis;
+ overflow: hidden;
+}
+
+.movie-info h4 {
+ font-size: 11px;
+ position: absolute;
+ top: 25px;
+}
+
+.movie-info p {
+ margin: 0;
+ padding: 0;
+ color: #a1a1a1;
+ line-height: 20px;
+}
+
+.movie-button {
+ background-color: #ac3ad9;
+ color: white;
+ border-radius: 18px;
+ padding: 15px;
+ outline: none;
+ border: none;
+ width: 125px;
+ position: absolute;
+ left: 50%;
+ top: 370px;
+ transform: translate(-50%, -50%);
+ font-family: $bodyFont;
+}
+
+p {
+ font-size: 0.8em;
+ color: rgb(212, 211, 211);
+ margin-bottom: 0;
+ margin-top: 10px;
+}
+
+.movie-overview {
+ display: -webkit-box;
+ text-overflow: ellipsis;
+ overflow: hidden;
+}
+.btn-click {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: 1fr;
+  grid-gap: 20px;
+  
+}
+
+@media (min-width: 720px) {
+ .movies-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-gap: 2em;
+  padding-top: 5vw;
+ }
+}
+
+@media (min-width: 1000px) {
+ .movies-container {
+  grid-template-columns: repeat(3, 1fr);
+ }
+}
+
+@media (min-width: 1400px) {
+ .movies-container {
+  grid-template-columns: repeat(4, 1fr);
+ }
+}
